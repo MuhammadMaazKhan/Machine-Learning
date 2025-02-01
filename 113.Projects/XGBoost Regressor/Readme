@@ -1,0 +1,95 @@
+Calories Burned Prediction Project Documentation
+
+Overview
+This project predicts the number of calories burned during physical activity using machine learning. It leverages user attributes (age, gender, height, weight) and exercise metrics (duration, heart rate, body temperature) to estimate calorie expenditure. A Streamlit web app provides an intuitive interface for users to interact with the model.
+Purpose
+•	Fitness Tracking: Help users estimate calorie burn for informed workout planning.
+•	Health Awareness: Encourage physical activity by quantifying exercise benefits.
+•	Personalization: Provide tailored predictions based on individual metrics.
+ Key Features
+•	Machine Learning Model: XGBoost regression for accurate predictions.
+•	Exploratory Data Analysis: Visualizations (heatmaps, distribution plots) to understand data patterns.
+•	Web Interface: User-friendly app with input fields for real-time predictions.
+•	Error Metrics: Model evaluation using Mean Absolute Error (MAE).
+Societal Impact
+•	Promotes Healthy Lifestyles: Encourages exercise by making calorie expenditure tangible.
+•	Weight Management: Helps users balance calorie intake/output for fitness goals.
+•	Accessibility: Free, easy-to-use tool democratizes fitness tracking.
+•	Data-Driven Decisions: Reduces guesswork in workout planning.
+
+Technical Components
+•	Dataset
+	Source: https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemos?resource=download
+	Features:
+o	User_ID: Unique identifier (excluded from modeling)
+o	Gender: Male (0) / Female (1)
+o	Age, Height (cm), Weight (kg)
+o	Duration (minutes), Heart_Rate (bpm), Body_Temp (°C)
+o	Calories: Target variable
+
+•	Preprocessing
+o	Combined datasets using pd.concat
+o	Encoded gender: male → 0, female → 1
+o	Dropped irrelevant User_ID column
+
+•	EDA (Exploratory Data Analysis)
+# Gender distribution
+sns.countplot(calories_data['Gender'])
+# Age/Height distributions
+sns.distplot(calories_data['Age'])
+sns.distplot(calories_data['Height'])
+# Correlation heatmap
+plt.figure(figsize=(10,10))
+sns.heatmap(calories_data.corr(), annot=True)
+
+•	Model Training
+
+o	Algorithm: XGBoost Regressor
+o	Train-Test Split: 80-20 ratio
+o	Performance: Mean Absolute Error is 1.4833678883314132
+
+•	 Installation
+o	Requirements:
+
+pip install scikit-learn==1.3.1 xgboost streamlit numpy pandas matplotlib seaborn
+o	Run the App:
+streamlit run app.py
+
+•	Usage Guide
+o	Input Fields:
+
+Age (1-100 years)
+Gender (Male/Female)
+Height (50-250 cm)
+Weight (30-200 kg)
+Exercise Duration (1-300 mins)
+Heart Rate (50-200 bpm)
+Body Temperature (35-40°C)
+
+•	Prediction:
+-	Click "Predict Calories Burnt"
+-	Results appear as:  
+Total burnt calories are: 287.42
+
+•	Limitations & Future Improvements
+
+o	Current Limitations:
+  - Dataset may not represent all body types/exercise types
+
+•	Improvements:
+
+  - Add activity type selection (running vs weightlifting)
+  - Include BMI calculation
+  - Collect more diverse training data
+
+
+
+•	Code Structure
+bash
+├── data/
+│   ├── calories.csv
+│   └── exercise.csv
+├── app.py          # Streamlit application
+
+ Conclusion
+This project demonstrates how machine learning can translate personal health metrics into actionable insights. By making calorie prediction accessible, it empowers individuals to take control of their fitness journeys while showcasing practical applications of regression models in healthcare technology.
