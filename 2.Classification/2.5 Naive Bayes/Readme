@@ -1,1 +1,4 @@
-2.5 Naive Bayes
+### 2.5 Naive Bayes
+- **Based on**: Bayes' Theorem + strong independence assumption.
+- **Fast and efficient** for text classification (e.g., spam detection).
+- **“Naive”** because it assumes features are independent (which may not be true).
