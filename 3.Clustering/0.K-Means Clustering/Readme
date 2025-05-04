@@ -1,1 +1,9 @@
-............
+### K-Means Clustering
+- **Goal**: Divide data into `K` clusters (groups).
+- **How it works**:
+  - Choose number of clusters (`K`)
+  - Assign data points to the nearest cluster center
+  - Update cluster centers based on current assignments
+  - Repeat until convergence
+- **Good for**: Customer segmentation, grouping similar items
+- **Note**: Sensitive to initial values and requires choosing `K`
