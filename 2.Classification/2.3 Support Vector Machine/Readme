@@ -1,1 +1,3 @@
-2.3 Support Vector Machine
+### 2.3 Support Vector Machine (SVM)
+- **Goal**: Find the best line (or hyperplane) that separates two classes.
+- **Works well with**: Clear margin of separation between classes.
