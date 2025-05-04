@@ -1,1 +1,5 @@
-Eclat
+### Eclat Algorithm
+- **Faster alternative** to Apriori (especially on large datasets).
+- **Uses**: Depth-first search instead of breadth-first (like Apriori).
+- **Stores** itemsets in vertical format (transaction IDs).
+- **Good for**: High-performance rule mining.
