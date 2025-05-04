@@ -1,1 +1,4 @@
-2.6 Decision Tree Classification
+### 2.6 Decision Tree Classification
+- **Splits data**: Based on feature conditions to make decisions.
+- **Easy to understand** and visualize.
+- **Overfits easily** on small datasets, so use pruning or ensembles.
