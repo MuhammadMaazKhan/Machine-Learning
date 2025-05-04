@@ -1,1 +1,4 @@
-2.4 Kernel SVM
+### 2.4 Kernel SVM
+- **Extension of SVM**: Works with non-linear data using kernel functions.
+- **Popular kernels**: RBF (Gaussian), Polynomial.
+- **Good for**: Complex datasets that are not linearly separable.
