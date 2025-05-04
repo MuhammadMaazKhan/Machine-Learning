@@ -1,1 +1,7 @@
-Hirerchial Clustering
+### Hierarchical Clustering
+- **Goal**: Build a hierarchy of clusters (tree-like structure)
+- **Types**:
+  - Agglomerative (bottom-up): Start with individual points and merge them
+  - Divisive (top-down): Start with all data and split into smaller clusters
+- **Output**: Dendrogram (a tree diagram showing merges/splits)
+- **Good for**: Understanding data structure, when you don't know `K`
