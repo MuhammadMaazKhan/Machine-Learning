@@ -1,0 +1,6 @@
+# 3. Polynomial Regression
+## Purpose: Capture non-linear relationships between variables.
+
+## Theory: Transforms input features into polynomial features, then applies linear regression.
+
+## Use Case: Predicting curves in data like population growth or product pricing.
