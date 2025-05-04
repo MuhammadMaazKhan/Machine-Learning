@@ -1,1 +1,4 @@
-2.2 Logistic Regrsession
+### 2.2 Logistic Regression
+- **Used for**: Binary or multiclass classification.
+- **Output**: Probability between 0 and 1, converted into class labels.
+- **Example**: Predicting if an email is spam or not.
