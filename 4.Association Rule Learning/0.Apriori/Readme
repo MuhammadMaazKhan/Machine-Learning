@@ -1,1 +1,7 @@
-apriori
+## Apriori Algorithm
+- **Goal**: Find frequent itemsets and generate association rules.
+- **How it works**:
+  - Step 1: Find itemsets that occur more than a minimum threshold (support).
+  - Step 2: Generate rules with high confidence and lift.
+- **Useful for**: Recommender systems, shopping cart analysis.
+- **Example rule**: If a customer buys bread and butter → they are likely to buy milk.
