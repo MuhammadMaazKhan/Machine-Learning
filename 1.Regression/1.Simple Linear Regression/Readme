@@ -1,0 +1,7 @@
+# 1.Simple Linear Regression
+
+## Purpose: Predict a target variable using one input feature.
+
+## Theory: Fits a straight line (y = mx + b) to minimize the difference between predicted and actual values using least squares.
+
+## Use Case: Predicting salaries based on years of experience
