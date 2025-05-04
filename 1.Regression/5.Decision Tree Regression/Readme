@@ -1,0 +1,4 @@
+### 5. Decision Tree Regression
+- Splits data into smaller parts using conditions.
+- Good for non-linear data, does not need scaling.
+- **Example**: Predicting values based on decision rules.
