@@ -1,1 +1,5 @@
 
+### 2.7 Random Forest Classification
+- **Ensemble of decision trees**.
+- **Reduces overfitting** and improves accuracy.
+- **Combines** results from multiple trees using majority vote.
