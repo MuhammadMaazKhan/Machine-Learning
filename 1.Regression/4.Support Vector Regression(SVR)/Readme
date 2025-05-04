@@ -1,0 +1,6 @@
+## 4. Support Vector Regression (SVR)
+# Purpose: Predict continuous values with a margin of tolerance.Tries to fit the best line within a margin (tolerance).
+
+# Theory: Uses support vector machines to fit the data within a specified epsilon margin. Works well for small datasets and non-linear data.
+
+# Use Case: Predicting stock prices or real estate values with tolerance.
