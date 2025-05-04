@@ -1,0 +1,4 @@
+### 6. Random Forest Regression
+- Uses many decision trees and averages their results.
+- More stable and accurate than a single tree.
+- **Example**: Used in real-world problems with large datasets.
