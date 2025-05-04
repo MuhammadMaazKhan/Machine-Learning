@@ -1,1 +1,4 @@
-Classification
+### 2.1 K-Nearest Neighbors (KNN)
+- **How it works**: Classifies a data point based on how its neighbors are classified.
+- **Simple idea**: “Tell me who your neighbors are, I’ll tell you who you are.”
+- **Good for**: Small datasets, pattern recognition.
