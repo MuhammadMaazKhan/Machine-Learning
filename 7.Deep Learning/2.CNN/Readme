@@ -1,1 +1,8 @@
 CNN
+
+- Convolution Operation – Learning how feature detectors (filters) work to extract patterns from images.
+- ReLU Layer – Introducing non-linearity to improve image recognition.
+- Pooling – Understanding max pooling and other techniques to reduce computational complexity while preserving important features.
+- Flattening – Converting pooled feature maps into a single vector for further processing.
+- Fully Connected Layers – Bringing everything together to classify images correctly.
+- Softmax & Cross-Entropy (Optional) – Understanding key terms used in CNNs for classification tasks
