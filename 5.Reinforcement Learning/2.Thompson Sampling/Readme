@@ -1,1 +1,5 @@
-Thompson Sampling
+### Thompson Sampling
+- **Probabilistic approach** using Bayesian inference.
+- Randomly selects options based on their probability of being the best.
+- **More efficient** than UCB in many real-world cases.
+- **Good for**: Real-time decision-making, optimizing click-through rates
