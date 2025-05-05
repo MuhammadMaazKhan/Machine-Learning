@@ -1,1 +1,6 @@
-Upper Confidence Bound
+### Upper Confidence Bound (UCB)
+- **Idea**: Choose the ad (or option) with the highest upper confidence bound.
+- Balances:
+  - **Exploitation**: Choose what seems best so far.
+  - **Exploration**: Try options with high uncertainty.
+- **Good for**: Online ad selection, product recommendations.
