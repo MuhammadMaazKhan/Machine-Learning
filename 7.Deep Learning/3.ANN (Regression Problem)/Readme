@@ -1,0 +1,5 @@
+We will build an Artificial Neural Network (ANN) to predict the energy output based on:
+- Temperature
+- Pressure
+- Humidity
+- Exhaust Vacuum
