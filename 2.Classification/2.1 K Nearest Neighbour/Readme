@@ -2,3 +2,58 @@
 - **How it works**: Classifies a data point based on how its neighbors are classified.
 - **Simple idea**: “Tell me who your neighbors are, I’ll tell you who you are.”
 - **Good for**: Small datasets, pattern recognition.
+
+
+## 🤖 K-Nearest Neighbors (K-NN) – Social Network Ads Classification
+
+### 📌 Project Overview
+
+This project showcases the implementation of the **K-Nearest Neighbors (K-NN)** algorithm, a popular non-parametric classification
+method, using Python and Scikit-learn. The goal is to predict whether a customer will buy a **new SUV** based on their
+**age** and **estimated salary**, using historical purchase data from previous SUV models.
+
+K-NN is a simple yet powerful classification technique that assigns a class to a new data point based on the majority class among
+its **k-nearest neighbors** in the feature space.
+
+This project is part of a broader **machine learning classification module** where different algorithms are compared using the
+same dataset and workflow for learning and benchmarking purposes.
+
+---
+
+### 📁 Dataset Description: `Social_Network_Ads.csv`
+
+This dataset is used across several classification models in this module. It consists of **400 observations**, 
+each representing a different customer.
+
+| Column Name       | Description                                                                  |
+| ----------------- | ---------------------------------------------------------------------------- |
+| `User ID`         | Unique identifier for each customer (not used in model training)             |
+| `Gender`          | Gender of the customer (optional in model training)                          |
+| `Age`             | Age of the customer (used as a feature)                                      |
+| `EstimatedSalary` | Estimated annual salary in dollars (used as a feature)                       |
+| `Purchased`       | **Target variable**: 1 if the customer purchased a previous SUV, 0 otherwise |
+
+🎯 **Objective**:
+Use the customer's **Age** and **Estimated Salary** to predict whether they will buy a new SUV (`Purchased` = 1).
+
+---
+
+### ✅ What You Will Learn
+
+* How the **K-Nearest Neighbors** algorithm works for classification tasks
+* Preprocessing techniques: splitting the dataset, feature scaling
+* How to train and evaluate a K-NN model using Scikit-learn
+* Use of confusion matrix to assess prediction accuracy
+* Visualizing decision boundaries of K-NN in 2D feature space
+* Reusing a **classification code template** across models for efficient model building
+
+---
+
+### 🔁 Workflow Summary
+
+1. **Load and preprocess data**
+2. **Split dataset** into training and test sets
+3. **Feature scale** the input variables
+4. **Train K-NN classifier** using Scikit-learn's `KNeighborsClassifier`
+5. **Predict outcomes** and evaluate using a confusion matrix
+6. **Visualize results** with decision boundary plots
