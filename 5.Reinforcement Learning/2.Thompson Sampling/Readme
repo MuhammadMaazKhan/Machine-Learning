@@ -3,3 +3,118 @@
 - Randomly selects options based on their probability of being the best.
 - **More efficient** than UCB in many real-world cases.
 - **Good for**: Real-time decision-making, optimizing click-through rates
+
+| Feature                      | UCB (Upper Confidence Bound)                                | Thompson Sampling                                     |
+| ---------------------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
+| **Nature**                   | Deterministic                                               | Probabilistic                                         |
+| **How It Selects an Arm**    | Picks the arm with the highest upper confidence bound       | Samples from belief distributions for each arm        |
+| **Randomness**               | No randomness in algorithm decisions                        | Random sampling introduces variability per run        |
+| **Feedback Handling**        | Needs immediate feedback to proceed                         | Can handle **delayed feedback**                       |
+| **Computational Efficiency** | Lightweight and simple                                      | May be heavier due to probabilistic computations      |
+| **Flexibility in Updates**   | Needs real-time updates                                     | Allows **batch updates**                              |
+| **Empirical Performance**    | Works well in practice                                      | Often **outperforms UCB empirically**                 |
+| **Use Case Example**         | Ideal in environments with immediate feedback (e.g., games) | Great for web scenarios like ad selection, AB testing |
+
+
+
+# 🎯 Ads CTR Optimization: UCB vs Thompson Sampling
+
+This project demonstrates the application of two Reinforcement Learning algorithms — 
+**Upper Confidence Bound (UCB)** and **Thompson Sampling** — to solve the **Multi-Armed Bandit problem**. 
+The goal is to maximize the click-through rate (CTR) of ads by identifying and selecting the most effective ad over multiple rounds
+(users).
+
+## 📁 Dataset Description
+
+* **File**: `Ads_CTR_Optimisation.csv`
+* **Format**: 10,000 rows × 10 columns
+* **Structure**:
+
+  * Each **row** represents a user.
+  * Each **column** represents an ad (10 ads total).
+  * Each **cell** contains either:
+
+    * `1` if the user clicked on the ad.
+    * `0` if the user did not click.
+
+### Example:
+
+| Ad\_1 | Ad\_2 | Ad\_3 | ... | Ad\_10 |
+| ----- | ----- | ----- | --- | ------ |
+| 0     | 0     | 0     | ... | 1      |
+
+The dataset is synthetic and designed to simulate user behavior. Each ad has a fixed but unknown probability of being 
+clicked (a fixed conversion rate). The aim is to **discover the best ad** (i.e., the one with the highest conversion rate) 
+through **online learning**.
+
+---
+
+## 🚀 Project Goal
+
+To compare the performance of:
+
+* 🟦 **UCB (Upper Confidence Bound)**: A deterministic strategy that chooses ads based on confidence intervals of the estimated reward.
+* 🟥 **Thompson Sampling**: A probabilistic approach using Beta distributions to model the expected reward for each ad.
+
+---
+
+## 🛠️ Project Structure
+
+```
+.
+├── Ads_CTR_Optimisation.csv        # Dataset
+├── thompson_sampling.ipynb        # Thompson Sampling implementation
+└── README.md                       # Project documentation
+```
+
+---
+
+## 📈 Key Metrics
+
+Both algorithms aim to:
+
+* Minimize **regret** (loss due to not picking the best ad).
+* Maximize the **total number of clicks** across 10,000 rounds.
+
+We visualize results via histograms showing how many times each ad was selected.
+
+---
+
+## 🧠 Algorithms Compared
+
+### 📊 UCB (Upper Confidence Bound)
+
+* Deterministic approach.
+* Updates after every round.
+* Requires immediate feedback.
+* Good performance but less flexible in real-time applications.
+
+### 🎲 Thompson Sampling
+
+* Probabilistic/Bayesian approach.
+* Can handle delayed feedback.
+* Efficient and computationally flexible.
+* Empirically performs better in many real-world scenarios.
+
+---
+
+## 📌 Results
+
+After 10,000 rounds:
+
+* **Thompson Sampling** usually selects the best ad more frequently and gets a **higher total number of clicks**.
+* This confirms its **better empirical performance** compared to UCB.
+
+---
+
+## 🧪 Requirements
+
+```bash
+Python >= 3.6
+numpy
+matplotlib
+pandas
+```
+
+Recommended: Run notebooks in **Google Colab** or **Jupyter Notebook**.
+
