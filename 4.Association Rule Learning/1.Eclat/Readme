@@ -4,7 +4,8 @@
 - **Stores** itemsets in vertical format (transaction IDs).
 - **Good for**: High-performance rule mining.
 
-In the .ipynb file, we use apriori as it just removes the confidence and lift b/c it doesn't count that 
+In the .ipynb file, we use apriori as it just removes the confidence and lift b/c it doesn't count that
+And change lhs and rhs to product 1 and product 2
 
 Its implementation is like this:
 ...................................................................................................................................
