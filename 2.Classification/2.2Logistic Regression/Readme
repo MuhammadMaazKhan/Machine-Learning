@@ -2,3 +2,63 @@
 - **Used for**: Binary or multiclass classification.
 - **Output**: Probability between 0 and 1, converted into class labels.
 - **Example**: Predicting if an email is spam or not.
+
+
+
+## 🤖 Logistic Regression – Social Network Ads Classification
+
+### 📌 Project Overview
+
+This project demonstrates the implementation of **Logistic Regression**, a fundamental classification algorithm in machine learning.
+The use case is a **marketing prediction task** for a car company: identifying which previous customers are most likely to
+purchase a newly released **SUV** based on their personal attributes.
+
+
+As a data scientist working for a car manufacturer, your goal is to build a model that classifies customers into two categories:
+
+* **1 (Yes)** – Likely to buy the new SUV
+* **0 (No)** – Unlikely to buy the new SUV
+
+The final model will help the **marketing and advertising team** target social media ads more effectively, improving conversion 
+rates and advertising ROI.
+
+---
+
+### 📁 Dataset Description: `Social_Network_Ads.csv`
+
+This dataset contains **user demographic information** and their **previous purchasing behavior** related to older SUV models.
+Each row corresponds to a different customer. The dataset includes:
+
+| Feature           | Description                                                               |
+| ----------------- | ------------------------------------------------------------------------- |
+| `User ID`         | Unique identifier for each customer (not used in model training)          |
+| `Gender`          | Gender of the customer (optional for modeling)                            |
+| `Age`             | Age of the customer (used for training)                                   |
+| `EstimatedSalary` | Annual estimated salary in dollars (used for training)                    |
+| `Purchased`       | **Target variable**: 1 if the customer bought a previous SUV, 0 otherwise |
+
+🔍 **Features used in model**:
+
+* `Age`
+* `EstimatedSalary`
+
+🎯 **Target variable**:
+
+* `Purchased` (0 or 1)
+
+This classification problem is a **binary classification task**, and logistic regression is used to draw a decision 
+boundary between customers likely or unlikely to buy the new SUV.
+
+---
+
+### ✅ Key Concepts Covered
+
+* Importing and preprocessing real-world data
+* Splitting the dataset into training and testing sets
+* Applying **feature scaling** for improved model performance
+* Training a **Logistic Regression** model using scikit-learn
+* Making predictions on new data
+* Evaluating model performance with a **confusion matrix**
+* Visualizing classification regions to understand decision boundaries
+
+
