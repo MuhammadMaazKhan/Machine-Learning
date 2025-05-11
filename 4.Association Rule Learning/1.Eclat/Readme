@@ -7,7 +7,7 @@
 In the .ipynb file, we use apriori as it just removes the confidence and lift b/c it doesn't count that
 And change lhs and rhs to product 1 and product 2
 
-Its implementation is like this:
+But actually its implementation is like this:
 ...................................................................................................................................
 
 from mlxtend.frequent_patterns import fpgrowth
