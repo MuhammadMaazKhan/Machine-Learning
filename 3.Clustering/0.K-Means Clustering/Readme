@@ -7,3 +7,58 @@
   - Repeat until convergence
 - **Good for**: Customer segmentation, grouping similar items
 - **Note**: Sensitive to initial values and requires choosing `K`
+
+
+## 🛍️ Mall Customer Segmentation using K-Means Clustering
+
+This project focuses on implementing **K-Means Clustering** to segment customers of a mall into distinct groups based on
+their annual income and spending behavior. The goal is to help the mall's strategic or marketing team better understand customer
+patterns and tailor services or marketing strategies accordingly.
+
+### 📊 Project Objective
+
+The purpose of this unsupervised machine learning project is to analyze customer data to **identify clusters or patterns** in
+purchasing behavior. Unlike classification or regression tasks where labels are known, clustering helps
+**discover hidden groupings** within the dataset without prior labels.
+
+### 📁 Dataset Description
+
+**Filename:** `Mall_Customers.csv`
+**Source:** \[UCI ML Repository / Kaggle]
+
+Each row in the dataset represents a unique customer, and the dataset includes the following features:
+
+* `CustomerID`: Unique identifier for each customer.
+* `Gender`: Gender of the customer (`Male` or `Female`).
+* `Age`: Age of the customer.
+* `Annual Income (k$)`: Annual income of the customer in thousands of dollars.
+* `Spending Score (1-100)`: Score assigned by the mall based on customer behavior and spending nature. A higher score indicates
+                             higher spending.
+
+### 🧠 What is Clustering?
+
+Clustering is an **unsupervised learning** technique used to group similar data points together. In this project,
+we use the **K-Means algorithm** to group customers into clusters based on their **Annual Income** and **Spending Score**,
+allowing the business to:
+
+* Understand distinct customer profiles
+* Design targeted marketing campaigns
+* Optimize customer relationship strategies
+
+### 🛠️ Tools & Libraries
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+### ✅ Outcome
+
+The final output visualizes customer segments in 2D space, helping identify:
+
+* High-income high-spending customers
+* Low-income low-spending customers
+* Other intermediate customer profiles
+
