@@ -3,3 +3,36 @@
 - **Uses**: Depth-first search instead of breadth-first (like Apriori).
 - **Stores** itemsets in vertical format (transaction IDs).
 - **Good for**: High-performance rule mining.
+
+In the .ipynb file, we use apriori as it just removes the confidence and lift b/c it doesn't count that 
+
+Its implementation is like this:
+...................................................................................................................................
+
+from mlxtend.frequent_patterns import fpgrowth
+import pandas as pd
+
+# Convert transactions to DataFrame format
+data = pd.DataFrame([
+    {'milk': 1, 'bread': 1, 'butter': 1, 'eggs': 0},
+    {'milk': 0, 'bread': 1, 'butter': 1, 'eggs': 0},
+    {'milk': 1, 'bread': 1, 'butter': 0, 'eggs': 0},
+    {'milk': 1, 'bread': 0, 'butter': 1, 'eggs': 0},
+    {'milk': 0, 'bread': 1, 'butter': 1, 'eggs': 1},
+])
+
+# Apply Eclat (FP-Growth)
+frequent_itemsets = fpgrowth(data, min_support=0.2, use_colnames=True)
+
+# Print results
+print(frequent_itemsets)
+.................................................................................................................................
+
+OUTPUT
+
+      itemsets  support
+0  {bread, butter}    0.60
+1     {milk, bread}    0.60
+2     {milk, butter}    0.40
+
+
