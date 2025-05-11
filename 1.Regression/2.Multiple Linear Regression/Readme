@@ -4,3 +4,58 @@
 ## Theory: Extends simple linear regression to multiple variables (y = b0 + b1x1 + b2x2 + ... + bnxn).
 
 ## Use Case: Predicting house prices based on area, number of bedrooms, and location.
+
+### 🔍 **Project Summary: Multiple Linear Regression (50 Startups Case Study)**
+
+This project is about building a **Multiple Linear Regression** model to **predict the profit of startups**
+based on several financial and categorical features. The purpose is to help a **Venture Capital (VC) fund** decide 
+**which startup to invest in** by analyzing historical data from 50 different startups.
+
+---
+
+### 📊 **Dataset Description: "50\_Startups.csv"**
+
+Each row in the dataset represents one startup, and it contains 50 such records.
+
+#### 📌 **Features (Independent Variables):**
+
+1. **R\&D Spend** – Money spent on Research & Development (numerical)
+2. **Administration Spend** – Money spent on administration activities like salaries, facilities (numerical)
+3. **Marketing Spend** – Advertising and promotion budget (numerical)
+4. **State** – The location of the startup: one of **New York**, **California**, or **Florida** (categorical, nominal)
+
+#### 🎯 **Target (Dependent Variable):**
+
+* **Profit** – The net profit earned by the startup (numerical)
+
+---
+
+### 💼 **Project Objective**
+
+* To **train a multiple linear regression model** on this data.
+* To **understand how various factors (spends and state)** impact the **startup's profitability**.
+* To **predict the profit of a new startup**, given its R\&D, administration, and marketing spend, and the state where it is located.
+
+---
+
+### 🧠 **What the Model Learns**
+
+* **Correlations** between the independent variables and the dependent variable (profit).
+* How **each dollar spent** on R\&D, admin, or marketing influences profit.
+* How the **state (categorical variable)** affects the outcome, using **One-Hot Encoding** to convert it into numerical form.
+
+---
+
+### ⚙️ **Preprocessing Steps Summary**
+
+1. **Import libraries**
+2. **Load the dataset**
+3. **Check for missing data** (none in this dataset)
+4. **Apply One-Hot Encoding** to the `State` column
+5. **Split dataset** into training and test sets
+6. **Train the model** on training data
+7. **Evaluate and predict** on test data
+
+---
+
+
