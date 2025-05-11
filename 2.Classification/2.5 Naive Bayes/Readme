@@ -2,3 +2,60 @@
 - **Based on**: Bayes' Theorem + strong independence assumption.
 - **Fast and efficient** for text classification (e.g., spam detection).
 - **“Naive”** because it assumes features are independent (which may not be true).
+
+
+
+## 🧠 Naive Bayes Classifier – Social Network Ads
+
+### 📌 Project Description
+
+This project demonstrates the implementation of a **Naive Bayes classification model** using the **Gaussian Naive Bayes** algorithm
+from Scikit-Learn. It is part of a broader comparison of machine learning classifiers including Logistic Regression,
+K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Kernel SVM.
+
+The objective is to predict whether a customer will purchase an SUV based on their **Age** and **Estimated Salary**. 
+This model is particularly interesting due to its probabilistic foundation and efficiency, even with small datasets.
+
+---
+
+### 🧮 What is Naive Bayes?
+
+**Naive Bayes** is a simple yet powerful classification algorithm based on **Bayes' Theorem**. It assumes that all features are 
+**independent** of each other (hence "naive") and uses probability theory to make predictions. Despite this strong assumption,
+it performs surprisingly well in many real-world scenarios, especially when the dataset is small or the features are conditionally 
+independent.
+
+In this project, we use the **Gaussian Naive Bayes** variant, which assumes that the continuous features 
+(age and salary) follow a normal distribution.
+
+---
+
+### 📊 Dataset Description
+
+**Filename**: `Social_Network_Ads.csv`
+**Total Records**: 400
+**Target**: `Purchased` (1 = Purchased SUV, 0 = Did not purchase SUV)
+
+**Features used for modeling**:
+
+* `Age`: Age of the customer
+* `EstimatedSalary`: Estimated annual income
+
+**Other columns** (ignored in this model):
+
+* `User ID`: Unique user identifier
+* `Gender`: Gender of the customer
+
+Each row represents a unique customer, and the goal is to learn patterns from the features to accurately classify future potential 
+SUV buyers.
+
+---
+
+### ✅ Objective
+
+* Implement a Gaussian Naive Bayes model using Scikit-Learn.
+* Preprocess the data using feature scaling.
+* Train the model on the training set and evaluate it on the test set.
+* Visualize the decision boundaries for both the training and test results.
+* Compare accuracy with previously tested classifiers.
+
