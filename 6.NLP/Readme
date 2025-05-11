@@ -1,1 +1,78 @@
-6.nlp
+
+
+## 🍽️ What is the Dataset About?
+
+**Dataset Name:** `Restaurant_Reviews.tsv`
+**Format:** Tab-separated values (TSV)
+**Rows:** 1,000 reviews
+**Columns:**
+
+* `Review`: A customer review about a restaurant (text)
+* `Liked`: Target variable (0 = negative sentiment, 1 = positive sentiment)
+
+**Example:**
+
+| Review                                           | Liked |
+| ------------------------------------------------ | ----- |
+| "Wow\... Loved this place."                      | 1     |
+| "Crust is not good."                             | 0     |
+| "Not tasty and the texture was just nasty."      | 0     |
+| "Stopped by during the late May bank holiday..." | 1     |
+
+---
+
+## 🧠 What is the Project?
+
+### 💬 Project Name:
+
+**Sentiment Analysis of Restaurant Reviews using NLP**
+
+### 📝 Project Goal:
+
+To **train a machine learning model** that can read a restaurant review (in text) and **predict whether the sentiment is 
+positive or negative**.
+
+---
+
+# 🍽️ Restaurant Reviews Sentiment Analysis
+
+This project applies Natural Language Processing (NLP) techniques to perform sentiment analysis on restaurant reviews.
+
+## 📊 Dataset
+- **Name:** Restaurant_Reviews.tsv
+- **Size:** 1000 samples
+- **Format:** TSV (Tab-separated)
+- **Columns:**
+  - `Review`: Text data (customer review)
+  - `Liked`: Binary label (1 = Positive, 0 = Negative)
+
+## 🧠 Objective
+Build a machine learning model that predicts whether a given restaurant review is positive or negative.
+
+## 🔧 Tools & Libraries Used
+- Python
+- NLTK (Natural Language Toolkit)
+- Scikit-learn
+- Pandas
+- Regular Expressions
+- CountVectorizer (Bag of Words)
+
+## 📚 Steps Implemented
+1. Data Importing & Cleaning
+2. Text Preprocessing (tokenization, stopword removal, stemming)
+3. Feature Extraction using Bag of Words
+4. Model Training (Multinomial Naive Bayes)
+5. Evaluation (Accuracy, Confusion Matrix, Classification Report)
+6. Predicting sentiment on new reviews
+
+## 📈 Model Used
+- Multinomial Naive Bayes classifier
+
+
+## 📦 Future Improvements
+- Use TF-IDF instead of CountVectorizer
+- Try different models (Logistic Regression, SVM, LSTM)
+- Deploy using Flask or Streamlit
+
+
+✅ **This project is beginner-friendly and demonstrates core NLP techniques with a real-world dataset.**
