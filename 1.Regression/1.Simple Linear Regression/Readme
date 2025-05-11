@@ -5,3 +5,58 @@
 ## Theory: Fits a straight line (y = mx + b) to minimize the difference between predicted and actual values using least squares.
 
 ## Use Case: Predicting salaries based on years of experience
+
+
+This project is about **Simple Linear Regression**, a fundamental statistical and machine learning technique used to model 
+the relationship between two variables: one **independent (predictor)** and one **dependent (target)** variable.
+
+---
+
+### 🔍 **Project Summary**
+
+The project's goal is to predict potato yield (in tons)** based on the amount of nitrogen fertilizer used (in kilograms)** on a farm.
+It demonstrates how simple linear regression can be used to draw a line of best fit using data points collected from multiple harvests to make predictions.
+
+---
+
+### 📊 **Dataset Description**
+
+While no real dataset is provided in the instructor's narration, the implied dataset would look like this:
+
+| **Fertilizer (kg)** | **Potato Yield (tons)** |
+| ------------------- | ----------------------- |
+| 1                   | 11                      |
+| 2                   | 14                      |
+| 3                   | 17                      |
+| ...                 | ...                     |
+
+Each row in the dataset represents:
+
+* The **amount of nitrogen fertilizer** used during a specific harvest.
+* The **corresponding yield of potatoes** obtained in that season.
+
+These data points are used to fit the simple linear regression model.
+
+---
+
+### 📈 **Model Equation**
+
+From the example:
+
+* **Intercept (b₀)** = 8 tons → This is the base yield when no fertilizer is used.
+* **Slope (b₁)** = 3 tons/kg → This is the expected increase in yield for each additional kg of fertilizer.
+
+**Equation:**
+
+Potato Yield=8+3×(Fertilizer Used)
+
+---
+
+### 🧠 **Purpose of the Project**
+
+* To **understand** how simple linear regression works.
+* To learn how to **interpret** model coefficients (intercept and slope).
+* To **visualize** the regression line on a scatter plot of real-world data.
+* To **predict outcomes** (e.g., estimate yield for 5 kg fertilizer).
+
+
