@@ -1,3 +1,43 @@
 ### 2.3 Support Vector Machine (SVM)
 - **Goal**: Find the best line (or hyperplane) that separates two classes.
 - **Works well with**: Clear margin of separation between classes.
+
+
+## 🧠 Support Vector Machine (SVM) Classifier – Social Network Ads
+
+### 📌 Project Description
+
+This project demonstrates the implementation of a **Support Vector Machine (SVM)** model for binary classification.
+It is part of a broader machine learning exercise to compare the performance of different classifiers including
+**Logistic Regression**, **K-Nearest Neighbors (KNN)**, and now **SVM**.
+
+We aim to predict whether a customer will purchase a product (SUV) based on two features: **Age** and **Estimated Salary**.
+This project uses the classic **Social\_Network\_Ads.csv** dataset and highlights model training, evaluation, 
+and visualization of decision boundaries.
+
+---
+
+### 📊 Dataset Description
+
+**Filename**: `Social_Network_Ads.csv`
+**Total Observations**: 400 rows
+**Columns**:
+
+* `User ID`: Unique identifier for the user (not used in modeling)
+* `Gender`: Gender of the user (not used in modeling)
+* `Age`: Age of the user (used as a feature)
+* `EstimatedSalary`: Estimated annual salary (used as a feature)
+* `Purchased`: Target variable (0 = Not Purchased, 1 = Purchased)
+
+---
+
+### ✅ Objective
+
+Build and evaluate an SVM classifier using Scikit-Learn to:
+
+* Train a model using Age and Estimated Salary.
+* Predict whether a user will purchase the product.
+* Visualize the decision boundary.
+* Compare results with previous models (Logistic Regression, KNN).
+
+
