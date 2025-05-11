@@ -2,3 +2,46 @@
 - Uses many decision trees and averages their results.
 - More stable and accurate than a single tree.
 - **Example**: Used in real-world problems with large datasets.
+
+📊 Random Forest Regression – Position Salaries
+🧠 Project Overview
+This project demonstrates how to implement Random Forest Regression, a powerful ensemble learning method, using Python
+and scikit-learn. It is part of a regression modeling series and follows earlier work done using Decision Tree Regression.
+
+Random Forest Regression is particularly useful when the dataset is non-linear or contains complex patterns.
+The model is trained to predict the salary of a position based on its level in a company hierarchy, helping to capture
+non-linear trends more accurately than basic linear models.
+
+📁 Dataset Description
+The dataset used in this project is Position_Salaries.csv, which contains fictional salary data corresponding to 
+different position levels in a company. It includes the following columns:
+
+Position	        Level	   Salary
+Business Analyst	  1	     45,000
+Junior Consultant	  2	     50,000
+...	...	...
+CEO	                10	   1,000,000
+
+Position: A string label for the job title (e.g., "Junior Consultant", "Manager").
+
+Level: A numerical representation (1–10) of the hierarchical level of the position.
+
+Salary: The target variable representing the salary associated with each level.
+
+Only the Level and Salary columns are used for training the regression model, with Level as the independent
+feature X and Salary as the dependent variable y.
+
+✅ Key Concepts Covered
+Loading and preparing a dataset
+
+Training a Random Forest Regression model using RandomForestRegressor from scikit-learn
+
+Understanding how random forests make predictions based on multiple decision trees
+
+Visualizing high-resolution regression results
+
+Discussing when and why to use Random Forests over simpler models
+
+🚫 No Feature Scaling Needed
+Random Forests are scale-invariant, so feature scaling is not required. The model is trained on the original feature values,
+which enhances interpretability.
