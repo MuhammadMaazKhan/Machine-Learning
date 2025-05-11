@@ -4,3 +4,74 @@
 ## Theory: Transforms input features into polynomial features, then applies linear regression.
 
 ## Use Case: Predicting curves in data like population growth or product pricing.
+
+
+📈 Polynomial Regression – Truth or Bluff Salary Prediction
+🧠 Project Overview
+This project is focused on building a Polynomial Regression model to address a non-linear regression problem. 
+The goal is to predict the expected salary for a given position level using historical salary data from a previous company.
+
+The central idea is to simulate a real-world HR scenario, where you're tasked with evaluating whether a job candidate’s expected
+salary aligns with the typical salary for their position level in a previous organization.
+
+We use polynomial regression instead of linear regression because the relationship between position level and salary
+is non-linear — higher-level positions don't just incrementally increase in pay; they often show exponential jumps.
+
+📊 Dataset Description: Position_Salaries.csv
+This dataset contains previous salary records from a company across various positions. 
+It's a small, simple dataset, ideal for understanding the behavior of non-linear regression models.
+
+📁 Columns:
+Column Name	Description
+Position : 	Job title (e.g., Business Analyst, Manager, CEO)
+Level	   :  Numeric representation of job hierarchy (1 to 10)
+Salary	 :  Salary for that position in USD
+
+Example: A Business Analyst (Level 1) might earn $45,000, while a CEO (Level 10) earns $1,000,000.
+
+🎯 Problem Statement
+A candidate applying for a role claims they earned $160,000 as a Regional Manager in their previous job.
+Is that a fair expectation or a bluff?
+
+Using the dataset:
+
+We identify that a Regional Manager corresponds to Level 6.5 (midpoint between Level 6 and 7).
+
+We use polynomial regression to predict the expected salary for Level 6.5.
+
+We compare the prediction to the candidate’s claim to judge whether their salary expectation is realistic.
+
+🛠️ Technologies Used
+Python
+
+NumPy
+
+Matplotlib
+
+Scikit-Learn
+
+Jupyter Notebook / Google Colab
+
+🔄 Workflow Summary
+Load and explore the dataset.
+
+Preprocess the features and targets.
+
+Train two models:
+
+Linear Regression (baseline)
+
+Polynomial Regression (non-linear fit)
+
+Visualize both models’ fits.
+
+Predict salary for position level 6.5.
+
+Compare predicted salary to candidate’s expectation.
+
+📌 Key Takeaways
+Polynomial regression can capture complex, non-linear relationships between variables.
+
+This project simulates how machine learning can aid in HR decisions and salary benchmarking.
+
+Small datasets can still be powerful tools when the right models are applied.
