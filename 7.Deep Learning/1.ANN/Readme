@@ -1,1 +1,109 @@
-ANN
+### ✅ **Dataset Purpose**
+
+The dataset belongs to a **bank** and is used to predict **whether a customer will leave (churn) or stay** with the bank based 
+on their profile and activity.
+
+This type of project is crucial in **Customer Retention** for businesses.
+
+---
+
+### 📁 **Dataset Features**
+
+| Feature         | Description                                                             |
+| --------------- | ----------------------------------------------------------------------- |
+| RowNumber       | Irrelevant, just the index                                              |
+| CustomerId      | Unique ID of each customer                                              |
+| Surname         | Customer's surname (optional for modeling)                              |
+| CreditScore     | Customer’s credit score                                                 |
+| Geography       | Country (categorical: e.g., France, Germany, Spain)                     |
+| Gender          | Male/Female                                                             |
+| Age             | Customer’s age                                                          |
+| Tenure          | Number of years as a customer                                           |
+| Balance         | Account balance                                                         |
+| NumOfProducts   | Number of bank products (cards, loans, etc.)                            |
+| HasCrCard       | 1 if customer has a credit card, 0 otherwise                            |
+| IsActiveMember  | 1 if customer is active, 0 otherwise                                    |
+| EstimatedSalary | Estimated salary                                                        |
+| **Exited**      | **Target variable**: 1 if customer left the bank, 0 if still a customer |
+
+---
+
+### 🧠 **Project Objective**
+
+To **build a deep neural network** that learns from this dataset and **predicts whether a customer will leave** (churn) based
+on their profile and behavior.
+
+---
+
+
+# 🔮 Bank Customer Churn Prediction using Deep Learning
+
+This project uses a Deep Neural Network built with **TensorFlow 2.0** to predict customer churn (whether a customer leaves the bank
+or not).
+
+## 📊 Dataset
+
+The dataset contains customer data from a bank, including personal details, financial behavior, and activity status.
+The goal is to predict the `Exited` column which indicates churn.
+
+**Features include:**
+
+* Demographics: Geography, Gender, Age
+* Financial: Credit Score, Balance, Salary
+* Account Activity: Tenure, IsActiveMember, NumOfProducts, HasCrCard
+* Target: Exited (0 = stayed, 1 = left)
+
+## 🧠 Model
+
+A **Fully Connected Artificial Neural Network (ANN)** using TensorFlow/Keras is used:
+
+* 2 Hidden Layers
+* ReLU Activation
+* Output Layer with Sigmoid (Binary Classification)
+* Optimizer: Adam
+* Loss Function: Binary Crossentropy
+* Metrics: Accuracy
+
+## 🧪 Steps
+
+1. Data Preprocessing
+
+   * Feature selection, encoding, scaling
+2. ANN Building
+
+   * Initialization, adding layers
+3. Training
+
+   * Compile and fit on training data
+4. Evaluation
+
+   * Predicting churn on test set
+   * Confusion matrix, accuracy
+5. Deployment
+
+   * Predict churn for a **single new customer**
+
+## 🚀 Technologies Used
+
+* Python
+* TensorFlow 2.0 / Keras
+* Pandas, NumPy, Scikit-learn
+* Google Colab / Jupyter Notebook
+
+## 📦 Files
+
+* `Churn_Modelling.csv`: Dataset file
+* `ArtificialNeuralNetwork.ipynb`: Code implementation notebook
+* `README.md`: Project overview and instructions
+
+## 🧩 Future Improvements
+
+* Hyperparameter tuning
+* Dealing with class imbalance
+* Adding dropout for regularization
+* Model interpretability (e.g., SHAP)
+
+## 📚 References
+
+* Deep Learning Intuition Lectures by Kirill Eremenko
+* Machine Learning A-Z Course (Udemy)
