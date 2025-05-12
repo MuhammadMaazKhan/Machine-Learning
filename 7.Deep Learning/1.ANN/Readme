@@ -1,3 +1,56 @@
+🧠 What is an ANN (Artificial Neural Network)?
+An Artificial Neural Network (ANN) is a computational model inspired by the human brain, made up of layers of nodes (neurons) that can learn patterns from data and make predictions or classifications.
+
+It consists of:
+
+Input Layer: Receives input features.
+
+Hidden Layers: Perform computations and feature transformations.
+
+Output Layer: Gives the final prediction (e.g., class label or value).
+
+⚙️ Core Steps in Building and Using an ANN
+🔹 1. Data Preprocessing
+Import the dataset
+
+Handle missing values (if any)
+
+Encode categorical data (e.g., Gender, Geography → OneHotEncoding)
+
+Split into training and test sets
+
+Feature Scaling (Standardization with StandardScaler)
+
+🔹 2. Building the ANN
+Initialize the ANN (e.g., Sequential() from Keras)
+
+Add Input & First Hidden Layer
+
+Add More Hidden Layers (if needed)
+
+Add Output Layer (e.g., 1 neuron with sigmoid for binary classification)
+
+🔹 3. Training the ANN
+Compile the ANN
+
+Optimizer: e.g., 'adam'
+
+Loss function: e.g., 'binary_crossentropy' for classification
+
+Metrics: e.g., 'accuracy'
+
+Fit to training set: Train the model on the data
+
+🔹 4. Making Predictions & Evaluating
+Predict on test set
+
+Make confusion matrix
+
+Evaluate accuracy
+
+Predict a new single observation (customer)
+
+
 ### ✅ **Dataset Purpose**
 
 The dataset belongs to a **bank** and is used to predict **whether a customer will leave (churn) or stay** with the bank based 
