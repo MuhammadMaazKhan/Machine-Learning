@@ -15,10 +15,123 @@ CNN
 
 These steps allow CNNs to go from **raw pixel data** to **meaningful labels** like "happy face," "dog," or "stop sign."
 
+## Run project on Jupyter Notebook
 
+# 🧠 CNN Cat vs Dog Classifier with TensorFlow & Keras
 
+This repository contains the implementation of a **Convolutional Neural Network (CNN)** to classify images of cats and dogs. 
+The project demonstrates how to build, train, and evaluate a deep learning model using **TensorFlow** and **Keras**, all executed
+in a **local Jupyter Notebook environment**.
 
+> Originally implemented on Google Colab, this version runs on your local machine using Jupyter Notebook from the Anaconda distribution.
 
 ---
 
-Would you like a downloadable version of the README or a cleaned-up Google Colab notebook for this project?
+## 📦 Requirements
+
+Before running the project, you need to install the following:
+
+- [Anaconda Individual Edition](https://www.anaconda.com/products/distribution) (Recommended for Jupyter Notebook and Python management)
+- Python 3.7
+- TensorFlow
+- Keras
+
+---
+
+## ⚙️ Installation
+
+### Step 1: Install Anaconda
+
+1. Go to the [Anaconda download page](https://www.anaconda.com/products/distribution).
+2. Download the **Anaconda Individual Edition** (GUI Installer for your OS).
+3. Choose the **Python 3.7 version**.
+4. Run the installer and follow the steps to complete installation.
+
+> If you already have Anaconda installed, skip this step.
+
+### Step 2: Install Required Libraries
+
+Open your **Terminal** (macOS/Linux) or **Anaconda Command Prompt** (Windows) and run the following commands:
+
+```bash
+pip install tensorflow
+pip install keras
+````
+
+This will install TensorFlow and Keras along with their dependencies.
+
+---
+
+## 📁 Project Structure
+
+Make sure the notebook file and the dataset folder are in the same directory:
+
+```
+cnn-cat-dog-classifier/
+│
+├── dataset/                      # Folder containing training and test images
+│   ├── training_set/
+│   └── test_set/
+│
+├── cnn_cat_dog_classifier.ipynb # The Jupyter Notebook implementation
+└── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+1. Open **Anaconda Navigator** and launch **Jupyter Notebook**.
+2. Navigate to the project directory where the `.ipynb` file and dataset are stored.
+3. Open `cnn_cat_dog_classifier.ipynb`.
+4. From the Jupyter toolbar, click `Kernel` → `Restart & Clear Output`.
+5. Run each cell one by one using `Shift + Enter`.
+
+---
+
+## 🏗️ What the Notebook Covers
+
+* **Data Preprocessing**: Image augmentation and feature scaling
+* **Model Architecture**:
+
+  * Convolutional Layers
+  * Max Pooling
+  * Flattening
+  * Fully Connected Layers
+* **Model Compilation**:
+
+  * Optimizer: Adam
+  * Loss: Binary Crossentropy
+  * Metric: Accuracy
+* **Model Training**:
+
+  * Trained over 25 epochs
+  * Batch size of 32
+
+---
+
+## 📈 Output
+
+During training, you’ll observe the increasing accuracy and decreasing loss for both training and validation datasets.
+After the final epoch, the model is ready to predict whether an image contains a **cat** or a **dog**.
+
+---
+
+## 🧪 Demo
+
+You can make single predictions by uploading new images and running inference with the trained model in the final notebook cells.
+
+---
+
+## 🧠 Technologies Used
+
+* Python 3.7
+* TensorFlow 2.x
+* Keras
+* Jupyter Notebook
+* Anaconda
+
+---
+
+
+
