@@ -1,8 +1,10 @@
-We will build an Artificial Neural Network (ANN) to predict the energy output based on:
-- Temperature
-- Pressure
-- Humidity
-- Exhaust Vacuum
+Dataset Column Descriptions
+Column	           Full Name          Unit       Description
+AT	        Ambient Temperature	      °C	        Temperature of the air surrounding the power plant.
+V	         Exhaust Vacuum	           cm Hg    	 Vacuum (suction pressure) in the steam turbine condenser.
+AP	         Ambient Pressure       	millibar	    Atmospheric pressure around the plant.
+RH	        Relative Humidity	          %	         Humidity level of the air.
+PE	         Electrical Energy         	MW	       Net electrical energy output of the power plant — this is what we predict.
 
 # 🔌 Artificial Neural Network for Power Plant Energy Output Prediction
 
