@@ -3,3 +3,90 @@ We will build an Artificial Neural Network (ANN) to predict the energy output ba
 - Pressure
 - Humidity
 - Exhaust Vacuum
+
+# 🔌 Artificial Neural Network for Power Plant Energy Output Prediction
+
+This project demonstrates how to build and train an **Artificial Neural Network (ANN)** to predict the **electrical energy output** of a power plant using various environmental features. The goal is to help understand the relationship between temperature, pressure, humidity, and exhaust vacuum on energy generation efficiency.
+
+---
+
+## 📊 Dataset Description
+
+The dataset used in this project is:
+
+**Name:** `Folds5x2_pp.xlsx`
+**Source:** UCI Machine Learning Repository
+**Format:** Excel (.xlsx)
+
+### Features (Inputs):
+
+* **Temperature (T)** — in °C
+* **Exhaust Vacuum (V)** — in cm Hg
+* **Ambient Pressure (AP)** — in millibar
+* **Relative Humidity (RH)** — in %
+
+### Target (Output):
+
+* **Electrical Energy Output (PE)** — in MW
+
+This dataset contains **9568 data points** collected from a combined cycle power plant over 6 years (2006–2011), sampled at different times.
+
+---
+
+## 🧠 What This Project Does
+
+* Imports the dataset into a **Google Colab notebook** using `pandas`
+* Splits the data into:
+
+  * **Matrix of Features (X):** All input columns
+  * **Dependent Variable Vector (y):** The target column (energy output)
+* Prepares the data for training and testing
+* Builds an **Artificial Neural Network (ANN)** using Keras/TensorFlow
+* Trains and evaluates the model to predict the plant's power output
+
+---
+
+## 🚀 Getting Started
+
+### Requirements
+
+* Google Colab or a local Jupyter Notebook environment
+* Python 3.7+
+* Required libraries:
+
+  ```bash
+  pip install pandas numpy scikit-learn matplotlib seaborn tensorflow
+  ```
+
+
+## 📁 Project Structure
+
+```plaintext
+📦 ann-energy-prediction
+ ┣ 📄 README.md
+ ┣ 📄 Folds5x2_pp.xlsx
+ ┗ 📄 ann_power_output_prediction.ipynb
+```
+
+---
+
+## 📈 Model Goal
+
+To accurately **predict the energy output (MW)** of a power plant based on input environmental features using a deep learning model, specifically an **ANN**.
+
+---
+
+## 📚 References
+
+* [UCI Machine Learning Repository: Combined Cycle Power Plant Dataset](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
+* "Deep Learning A-Z™" by Kirill Eremenko & Hadelin de Ponteves (Udemy)
+
+---
+
+## ✅ Future Improvements
+
+* Use model hyperparameter tuning (e.g., GridSearchCV)
+* Add dropout for regularization
+* Experiment with other regression models (Random Forest, XGBoost)
+
+
