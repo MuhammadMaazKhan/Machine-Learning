@@ -63,6 +63,17 @@ This project demonstrates **dimensionality reduction** using **Principal Compone
 followed by training a **logistic regression model** to classify wines into **customer segments**. The aim is to reduce feature
 complexity while preserving key variance in the data, ultimately supporting a **recommender system** for wine merchants.
 
+✔️ It’s predicting the type of wine (from 3 categories),
+based on its chemical properties using a model trained on labeled data.
+
+Each wine type was originally created from grapes grown in three different cultivars (varieties).
+
+These cultivars resulted in different chemical properties in the wine, and experts labeled them as Class 0, 1, or 2.
+
+Now we can use machine learning to say:
+
+“If a wine has this alcohol, this ash content, this flavonoid level... it probably belongs to Class 1.”
+
 ---
 
 ## 📌 Project Overview
