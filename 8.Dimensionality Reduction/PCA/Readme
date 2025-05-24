@@ -1,0 +1,51 @@
+Used iN
+🔹 Unsupervised Learning	Because PCA doesn't use labeled data.
+🔹 Dimensionality Reduction	PCA is one of the most popular techniques here.
+🔹 Feature Extraction / Selection	PCA helps reduce the number of features while keeping the important patterns.
+🔹 Data Preprocessing / Preparation	Often used before feeding data into ML models to reduce size and noise.
+
+
+
+Imagine you have a big coloring book full of drawings, and each drawing has many colors and shapes. But to understand the main idea of the drawing, you don’t need to look at **every** little color or detail — just the **important parts**.
+
+PCA is like a smart pair of glasses that helps you **look at only the most important things** in a big mess of data (like shapes and colors). It helps you see **what really matters** by shrinking the picture but still keeping the big idea clear.
+
+So if your picture has 10 colors, PCA might help you understand it using only 2 or 3 — much simpler, but still useful!
+
+It also lets you **turn and twist the drawing** (like in 3D!) to better see what’s going on. But be careful — if you spill ink (like an outlier), it might mess up your view.
+
+
+
+**Principal Component Analysis (PCA)** is a widely-used **unsupervised dimensionality reduction technique**. Its main objective is to:
+
+* Identify **correlations between features**.
+* Find the **directions (principal components) of maximum variance** in high-dimensional data.
+* **Project** this data into a lower-dimensional space (from D to K dimensions, where K < D) while preserving as much information as possible.
+
+PCA is commonly applied in:
+
+* **Visualization**
+* **Feature extraction**
+* **Noise filtering**
+* Domains like **finance (e.g., stock prediction)** and **bioinformatics (e.g., gene analysis)**.
+
+---
+
+### 💡 PCA Algorithm Steps:
+
+1. **Standardize** the dataset.
+2. Compute **covariance matrix**.
+3. Find **eigenvalues and eigenvectors** of the covariance matrix.
+4. Sort eigenvectors by descending eigenvalues.
+5. Select top K eigenvectors → form **projection matrix W**.
+6. **Transform** the original data using W.
+
+---
+
+### ⚠️ Important Note:
+
+* **Not predictive** like linear regression — PCA is **exploratory**.
+* It is **sensitive to outliers** — which can distort the principal components.
+
+PCA helps in **understanding structure** in data, especially when visualized in **2D or 3D** to observe how data behaves along the new axes of maximum variance.
+
