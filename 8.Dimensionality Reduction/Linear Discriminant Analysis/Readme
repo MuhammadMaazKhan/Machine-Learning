@@ -1,0 +1,18 @@
+Imagine you have a big box of crayons. Each crayon has many colors mixed in, like red, blue, green, and more.
+
+Now, let's say you want to group crayons by who likes them:
+
+Group 1: Kids who like red
+
+Group 2: Kids who like green
+
+Group 3: Kids who like blue
+
+But all your crayons are jumbled up and mixed.
+
+What LDA does is this:
+
+It helps you find the best way to line up the crayons, so that it's easy to see which group each crayon belongs to.
+
+Supervised: Unlike PCA (which is unsupervised and maximizes variance), LDA considers the class label, making it a supervised method.
+
