@@ -1,3 +1,10 @@
+Project ########
+
+The project where we apply Grid Search with Cross-Validation to find the best hyperparameters for a Kernel SVM classifier. This 
+is based on the Social Network Ads dataset and aims to demonstrate how model performance can be optimized through 
+hyperparameter tuning.
+
+
 Imagine you're trying to bake the best cake. 🍰
 You try different amounts of sugar, different oven temperatures, and different baking times.
 
