@@ -1,0 +1,9 @@
+| Kernel Type        | Formula (General Idea)                 | Use Case / Shape Detected                                 |
+| ------------------ | -------------------------------------- | --------------------------------------------------------- |
+| **Linear**         | $K(x, y) = x^\top y$                   | Same as regular PCA (no real kernel effect).              |
+| **Polynomial**     | $K(x, y) = (x^\top y + c)^d$           | Detects **curved** and **multi-order** relationships.     |
+| **RBF / Gaussian** | $K(x, y) = \exp(-\gamma \|x - y\|^2)$  | Great for **complex nonlinear** and **local** structures. |
+| **Sigmoid**        | $K(x, y) = \tanh(\alpha x^\top y + c)$ | Used in neural networks; less common in PCA.              |
+
+
+📌 Standard PCA (No Kernel): Fails on nonlinear patterns, e.g., concentric circles.
