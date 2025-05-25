@@ -1,0 +1,29 @@
+Imagine you're trying to bake the best cake. 🍰
+You try different amounts of sugar, different oven temperatures, and different baking times.
+
+You try every combination:
+
+1 spoon sugar + 150°C + 20 minutes
+
+2 spoons sugar + 150°C + 20 minutes
+
+1 spoon sugar + 180°C + 25 minutes
+
+...and so on.
+
+Then you taste each cake and pick the one that’s the most yummy!
+
+🎯 This is like Grid Search:
+You try all possible combinations of settings to find the best one.
+
+Grid Search is a technique used in machine learning to find the best hyperparameters for a model.
+
+🔍 It does this by:
+
+Defining a grid of possible values (like a menu of choices).
+
+Trying every combination of those values.
+
+Evaluating each one (often using cross-validation).
+
+Picking the one with the best performance.
