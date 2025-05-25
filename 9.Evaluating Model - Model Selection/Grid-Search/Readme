@@ -27,3 +27,116 @@ Trying every combination of those values.
 Evaluating each one (often using cross-validation).
 
 Picking the one with the best performance.
+
+
+
+## ✅ 1. **Why these numbers for SVM? (`C`, `gamma`)**
+
+These numbers are not fixed; they are **chosen to test different model behaviors**.
+
+### 🔹 `C` (Regularization Parameter)
+
+* Controls **model complexity**:
+
+  * **Low `C` (e.g. 0.01, 0.1)** → simpler model, more tolerant of errors, less overfitting.
+  * **High `C` (e.g. 1, 10, 100)** → complex model, fits training data tightly, higher chance of overfitting.
+
+🧪 Example test values: `[0.01, 0.1, 1, 10, 100]`
+
+---
+
+### 🔹 `gamma` (RBF kernel only)
+
+* Controls **how far each training example affects the decision boundary**.
+
+  * **Low gamma (e.g. 0.001, 0.01)** → smoother model, generalizes better.
+  * **High gamma (e.g. 0.1, 1, 10)** → more flexible model, may overfit.
+
+🧪 Example test values: `['scale', 'auto', 0.001, 0.01, 0.1, 1, 10]`
+
+---
+
+### 📌 Why those numbers?
+
+Because:
+
+* They test a **wide range** (small → big).
+* Help find the **best balance** between underfitting and overfitting.
+* Not too many values — to keep training fast.
+
+---
+
+## ✅ 2. **What values do we use for other models?**
+
+Each model has **its own important hyperparameters** — here's a cheat sheet:
+
+---
+
+### 🔸 **Logistic Regression**
+
+```python
+'C': [0.01, 0.1, 1, 10, 100]
+'penalty': ['l1', 'l2']
+'solver': ['liblinear', 'saga']
+```
+
+---
+
+### 🔸 **K-Nearest Neighbors (KNN)**
+
+```python
+'n_neighbors': [3, 5, 7, 9]
+'weights': ['uniform', 'distance']
+'metric': ['euclidean', 'manhattan']
+```
+
+---
+
+### 🔸 **Decision Tree**
+
+```python
+'max_depth': [None, 5, 10, 20]
+'min_samples_split': [2, 5, 10]
+'criterion': ['gini', 'entropy']
+```
+
+---
+
+### 🔸 **Random Forest**
+
+```python
+'n_estimators': [50, 100, 200]
+'max_depth': [None, 10, 20]
+'min_samples_leaf': [1, 2, 4]
+```
+
+---
+
+### 🔸 **Gradient Boosting / XGBoost**
+
+```python
+'n_estimators': [50, 100, 200]
+'learning_rate': [0.01, 0.1, 0.2]
+'max_depth': [3, 5, 7]
+```
+
+---
+
+### 🔸 **K-Means (Clustering)**
+
+```python
+'n_clusters': [2, 3, 4, 5, 6, 7, 8, 9, 10]
+'init': ['k-means++', 'random']
+'max_iter': [100, 300, 500]
+```
+
+---
+
+## 🧠 Final Tip
+
+There’s no **universal fixed set of values** — we try a **range** of small to large numbers to find what works best for
+**our specific dataset**.
+
+We use tools like **`GridSearchCV`** or **`RandomizedSearchCV`** to automatically test combinations.
+
+
