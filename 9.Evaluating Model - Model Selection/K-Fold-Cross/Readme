@@ -1,0 +1,32 @@
+🧠 What Is K-Fold Cross-Validation?
+When we build a machine learning model, we want to check if it's really good
+
+It’s a smarter way to test the model. Here’s how it works:
+
+Split the data into K parts (for example, K = 10). Each part is called a fold.
+
+We do this K times:
+
+Pick 1 fold for validation (like testing).
+
+Use the other K−1 folds for training.
+
+Train the model and test it on the validation fold.
+
+Do this again and again, each time using a different fold for testing.
+
+At the end, you get K test results (scores).
+
+You take the average of those scores — that tells you how well your model is really doing.
+
+ Example (with 10 folds):
+Split your data into 10 equal pieces.
+
+Use 9 for training, 1 for testing.
+
+Do this 10 times, each time testing on a different piece.
+
+Get 10 scores.
+
+Average the scores to see how good the model really is.
+
