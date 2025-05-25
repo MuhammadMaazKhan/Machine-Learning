@@ -30,3 +30,31 @@ Get 10 scores.
 
 Average the scores to see how good the model really is.
 
+Imagine you have a big box of candies, and you want to check if you can guess the color of candies correctly. Instead of guessing only once, you divide your candies into 10 small groups.
+
+You pick 9 groups to practice guessing and keep 1 group aside to test yourself.
+
+You guess on the test group and see how many you got right.
+
+Then, you swap the test group to the next one and practice on the other 9 groups again.
+
+You keep doing this until every group has been tested once.
+
+This way, you get better and know how good you really are at guessing because you tested many times on different groups.
+
+Bias is the error that happens when a model is too simple and misses the actual pattern in the data.
+🔹 It gives similar results every time but far from the real answer.
+
+Variance is the error that happens when a model is too sensitive and changes a lot if the data changes slightly.
+🔹 It gives different results every time and overfits the data.
+
+| Case                    | Bias | Variance | What Happens?                      |
+| ----------------------- | ---- | -------- | ---------------------------------- |
+| Too simple model        | High | Low      | Always wrong, but in the same way  |
+| Too complex model       | Low  | High     | Sometimes right, often overfits    |
+| Worst case (bad model)  | High | High     | Always wrong, always changes       |
+| Ideal (rare, best case) | Low  | Low      | Always close to the correct answer |
+
+
+
+
